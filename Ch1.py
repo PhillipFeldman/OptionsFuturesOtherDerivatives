@@ -26,7 +26,7 @@ class Option:
 
 
 class Purchase:
-    def __init__(self,premium,option):
+    def __init__(self,premium,option:Option):
         self.premium = premium
         self.option = option
 
@@ -37,7 +37,7 @@ class Purchase:
         return self.option.revenue(spot_price) - self.option.size*self.premium
 
 class Sale:
-    def __init__(self,premium, option):
+    def __init__(self,premium, option:Option):
         self.premium = premium
         self.option = option
 

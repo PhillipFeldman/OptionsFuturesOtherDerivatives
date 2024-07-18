@@ -8,7 +8,7 @@ class Future:
 
 
 class MarginAccount:
-    def __init__(self,num_contracts,futures_contract,
+    def __init__(self,num_contracts,futures_contract:Future,
                  short_or_long,initial_margin,maintenance_margin_rate = .75):
         assert short_or_long in ['s','l']
         self.num_contracts, self.futures_contract,\
